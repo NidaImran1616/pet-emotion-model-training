@@ -1,0 +1,47 @@
+
+PET HEALTH AI MODEL - TRAINING REPORT
+==================================================
+
+DATASET INFORMATION:
+• Total Samples: 5000
+• Training Samples: 4000
+• Testing Samples: 1000
+• Features Used: ['Breed_Code', 'Age_Years', 'Weight_kg', 'Temperature_C', 'Heartbeat_BPM']
+
+MODEL PERFORMANCE:
+• Overall Accuracy: 0.9340 (93.40%)
+• Precision: 0.9338
+• Recall: 0.9340
+• F1-Score: 0.9335
+
+FEATURE IMPORTANCE:
+      Feature  Importance
+Temperature_C    0.432029
+Heartbeat_BPM    0.389646
+    Weight_kg    0.077578
+   Breed_Code    0.058607
+    Age_Years    0.042140
+
+CONFUSION MATRIX:
+[[160  25   2]
+ [ 36  82   0]
+ [  3   0 692]]
+
+DETAILED CLASSIFICATION:
+              precision    recall  f1-score   support
+
+       Alert       0.80      0.86      0.83       187
+    Critical       0.77      0.69      0.73       118
+      Normal       1.00      1.00      1.00       695
+
+    accuracy                           0.93      1000
+   macro avg       0.86      0.85      0.85      1000
+weighted avg       0.93      0.93      0.93      1000
+
+
+MODEL INFORMATION:
+• Algorithm: Random Forest
+• Estimators: 100
+• Random State: 42
+
+Report generated on: 2025-11-16 12:37:17
